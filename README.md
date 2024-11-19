@@ -9,6 +9,93 @@ This project demonstrates an end-to-end data engineering solution using AWS serv
 
 ![Architecture Diagram](path/to/architecture-diagram.png)
 
+
+## Key Performance Indicators (KPIs)
+
+KPIs are essential to measure and monitor the efficiency, timeliness, and accuracy of the shipment processes.
+
+### 1. Shipment KPIs
+
+- **On-Time Delivery Rate**: Percentage of shipments delivered on or before the promised delivery date.
+  - **Formula**: 
+    $$
+    \frac{\text{On-Time Deliveries}}{\text{Total Shipments}} \times 100
+    $$
+
+- **Average Delivery Time**: The average time taken from shipment dispatch to delivery.
+  - **Formula**: 
+    $$
+    \frac{\sum \text{Delivery Times}}{\text{Total Shipments}}
+    $$
+
+- **Shipment Delay Rate**: Percentage of shipments delayed past the estimated delivery date.
+  - **Formula**: 
+    $$
+    \frac{\text{Delayed Shipments}}{\text{Total Shipments}} \times 100
+    $$
+
+- **Order Processing Time**: Average time taken from order placement to shipment dispatch.
+
+- **Fulfillment Rate**: Percentage of orders fulfilled successfully out of total orders placed.
+  - **Formula**: 
+    $$
+    \frac{\text{Successful Fulfillments}}{\text{Total Orders}} \times 100
+    $$
+
+- **Percentage of Lost or Damaged Shipments**: Number of shipments reported as lost or damaged in transit.
+
+### 2. Customer Satisfaction KPIs
+
+- **Customer Satisfaction Score (CSAT)**: Percentage of satisfied customers based on post-delivery surveys.
+
+- **Net Promoter Score (NPS)**: Measures customer loyalty and likelihood of recommending the service.
+
+- **Customer Complaints Rate**: Number of complaints related to shipment issues (e.g., delays, damages).
+
+### 3. Operational Efficiency KPIs
+
+- **Average Cost per Shipment**: Average cost incurred per shipment, including handling, storage, and delivery costs.
+
+- **Warehouse Processing Time**: Time taken to pick, pack, and dispatch items from the warehouse.
+
+- **Order Accuracy Rate**: Percentage of orders accurately fulfilled without discrepancies.
+  - **Formula**: 
+    $$
+    \frac{\text{Accurate Orders}}{\text{Total Orders}} \times 100
+    $$
+
+- **Inventory Turnover Rate**: Measures how often inventory is replaced over a period.
+  - **Formula**: 
+    $$
+    \frac{\text{Cost of Goods Sold}}{\text{Average Inventory Value}}
+    $$
+
+### 4. Logistics and Carrier Performance KPIs
+
+- **Carrier On-Time Performance**: Percentage of shipments delivered on time by each carrier.
+
+- **Average Transit Time by Carrier**: Measures the average time shipments spend in transit per carrier.
+
+- **Shipment Tracking Accuracy**: Rate of accurate updates provided for shipment tracking.
+
+- **Delivery Attempt Rate**: Percentage of deliveries attempted on the first try.
+
+### 5. Data Pipeline Health KPIs
+
+- **Data Ingestion Latency**: Measures the time taken to ingest data from sources (Kinesis, S3, etc.) into the pipeline.
+
+- **Data Processing Time**: Average time for ETL processing and transformation steps.
+
+- **Data Pipeline Success Rate**: Percentage of successful pipeline runs without failures.
+  - **Formula**: 
+    $$
+    \frac{\text{Successful Runs}}{\text{Total Runs}} \times 100
+    $$
+
+- **ETL Error Rate**: Number of ETL jobs that failed during the data pipeline process.
+
+---
+
 ## Components
 
 1. **Data Ingestion**
